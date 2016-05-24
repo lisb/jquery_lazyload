@@ -111,6 +111,7 @@
                                 var elements_left = elements.length;
                                 settings.load.call(self, elements_left, settings);
                             }
+                            $(this).unbind("load");
                         })
                         .attr("src", $self.data(settings.data_attribute));
                 }
